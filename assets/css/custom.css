@@ -1,4 +1,5 @@
 .parallax {
+    /* 6D07E6  */
     background-image: linear-gradient(120deg, rgba(80, 0, 209, 0.8) 30%, rgba(80, 0, 209, 0.4)  50%) !important;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,8 +12,8 @@
 .card-image {
     max-width: 300px;
     min-width: 200px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 30px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -38,11 +39,27 @@
 }
 
 .app-store {
+    max-height:50px;
     max-width: 150px;
-    min-width: 150px;
-
+    min-width: 140px;
 }
 
 hr.solid {
     border-top: 3px solid #bbb;
+  }
+
+  #mobile {
+      left:10vw;
+      position: absolute;
+      z-index: 0;
+      width: 80vw;
+      bottom: -41vw;
+  }
+
+  #placeholder {
+      height: 40vw;
+  }
+
+  .coolborder {
+      border: 1px solid beige
   }
