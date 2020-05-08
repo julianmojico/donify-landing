@@ -27,7 +27,7 @@
 }
 
 .card-image {
-    max-width: 300px;
+    max-width: 300px !important;
     min-width: 200px;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -88,18 +88,31 @@ hr.solid {
     border-top: 3px solid #bbb;
   }
 
+  @media (min-width: 1000px){
+    #mobile {
+        left:34vw;
+        position: absolute;
+        z-index: 0;
+        width: 30vw;
+        bottom: -26vw;
+    }
+    #placeholder {
+        height: 35vw;
+    }
+  }
+  @media (max-width: 1000px){
   #mobile {
-      left:10vw;
+      left:24vw;
       position: absolute;
       z-index: 0;
-      width: 80vw;
-      bottom: -41vw;
+      width: 50vw;
+      bottom: -45vw;
   }
-
   #placeholder {
-      height: 40vw;
+      height: 60vw;
   }
 
+  }
   .coolborder {
-      border: 1px solid beige
+      border: 1px solid beige;
   }
