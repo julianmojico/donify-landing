@@ -22,6 +22,7 @@
   <meta name="description" content="Comunidad de Intercambio">
   <meta name="author" content="Julian Mojico">
   <title>Donify - Comunidad de Intercambio</title>
+  <link href="./assets/vendor/animate/animate.min.css" rel="stylesheet">
   <!-- Favicon -->
   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Fonts -->
@@ -74,7 +75,7 @@
         <div class="col px-0">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
-              <img alt="image" src="./assets/img/donify/donify_icon.png" style="width: 200px;" class="img-fluid">
+              <img alt="image" src="./assets/img/donify/donify_icon.png" style="width: 200px;" class="">
               <p class="lead text-white">Comunidad de Intercambio</p>
             </div>
           </div>
@@ -90,13 +91,13 @@
           <p class="lead" style="white-space:pre-line">Promovemos la economía circular.
             Creemos en el apoyo entre las personas.
             Desalentamos el modelo de hiperconsumo.</p>
-          <a href="#" class="btn btn-primary mt-4">Conocer más</a>
+          <!-- <a href="#" class="btn btn-primary mt-4">Conocer más</a> -->
         </div>
 
     </section>
 
     <div class="col-md-12 text-center bg-gradient-neutral mb-4 p-4">
-      <h1 class="display-2 text-primary m-0">¿Cómo funciona?</h1>
+      <h1>¿Cómo funciona?</h1>
     </div>
     </div>
 
@@ -104,14 +105,10 @@
 
     <!-- Regalá -->
     <section class="section section-lg section-hero section-shaped ">
-      <div class="shape shape-style-1 shape-default">
+      <div class="shape shape-default">
         <span></span>
         <span></span>
         <span class="span-50"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
         <span></span>
         <span></span>
       </div>
@@ -122,11 +119,11 @@
           <div class="row text-center mb-sm justify-content-sm-end">
 
             <div class="col-sm-8 align-self-center">
-              <h1 class="display-3  text-white">Regalá algo que no úses </h1>
+              <h1 class="display-3 text-white wow slideInLeft animation-delay-0">Regalá algo que no usas </h1>
               <br>
-              <div class="coolborder p-sm">
-                <p class="text-white" style="white-space: pre-line;">¿Pasó un año y no lo usaste? Entonces, no lo
-                  necesitas. Pero alguien mas sí.
+              <div class="coolborder p-sm wow fadeInUp animation-delay-1">
+                <p class="text-white" style="white-space: pre-line;">
+                  Si no lo usas, no lo necesitás. Pero alguien más si lo necesíta.
 
                   Podes buscar en el armario, en el sótano, en cajas o en la casa de tus padres.
                   Algunos candidatos habituales son una bici, unos rollers, un celular viejo, un instrumento musical,
@@ -135,8 +132,22 @@
               </div>
             </div>
             <div class="col-sm-4">
-              <!-- <img id="question" class="img-center" src="./assets/img/donify/question.png" /> -->
-              <img src="assets/img/donify/dona.png" class="card-image img-fluid" style="min-width:300px" />
+              <!-- <img id="question" class="img-center" src="./assets/img/donify/question.png" /> -->              
+              <div>
+                <img src="assets/img/donify/dona.png" class="card-image  wow fadeInRight animation-delay-1 shadowed"/>
+                <svg height="0" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="drop-shadow">
+                      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+                      <feOffset dx="12" dy="12" result="offsetblur"/>
+                      <feFlood flood-color="rgba(0,0,0,0.5)"/>
+                      <feComposite in2="offsetblur" operator="in"/>
+                      <feMerge>
+                          <feMergeNode/>
+                          <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                  </filter>
+              </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -151,10 +162,10 @@
           <div class="row text-center mb-sm justify-content-sm-end">
 
             <div class="col-sm-8 align-self-center">
-              <h1 class="display-3 text-white">Tus donaciones suman puntos.</h1>
+              <h1 class="display-3 text-white wow slideInLeft animation-delay-0">Tus donaciones suman puntos.</h1>
               <br>
-              <div class="coolborder p-sm">
-                <p class="text-white" style="white-space: pre-line;">
+              <div class="coolborder p-sm wow fadeInUp animation-delay-1">
+                <p class="text-white " style="white-space: pre-line;" >
                   Vas a recibir puntos de recompensa cada vez que publiques y regales!
                   Tambien vas a sumar puntos si ofreces una buena experiencia de intercambio a los demas usuarios!
                 </p>
@@ -163,7 +174,7 @@
             </div>
             <div class="col-sm-4">
               <div>
-                <img src="assets/img/donify/puntos.svg" class="card-image img-fluid" />
+                <img src="assets/img/donify/puntos.svg" class="card-image  wow fadeInRight animation-delay-1 shadowed" />
               </div>
             </div>
           </div>
@@ -179,9 +190,9 @@
         <div class="col px-0">
           <div class="row justify-content-center text-center mb-sm">
             <div class="col-sm-8 align-self-center">
-              <h1 class="display-3  text-white">Elegí un artículo que te gúste!</h1>
+              <h1 class="display-3 text-white wow slideInLeft animation-delay-0">Elegí un artículo que te gúste!</h1>
               <br>
-              <div class="coolborder p-sm">
+              <div class="coolborder p-sm wow fadeInUp animation-delay-1">
                 <p class="text-white" style="white-space: pre-line;">
                   Podes ver quién lo regala, en que zona, y si su reputación es de confianza entre la comunidad.
                   Ademas vas a poder filtrar por categoria, zona geográfica y más!
@@ -190,7 +201,7 @@
               </div>
             </div>
             <div class="col-sm-4">
-              <img src="assets/img/donify/elegi.svg" class="card-image img-fluid" />
+              <img src="assets/img/donify/elegi.svg" class="card-image  wow fadeInRight animation-delay-1 shadowed" />
             </div>
           </div>
         </div>
@@ -206,16 +217,16 @@
           <div class="row justify-content-center text-center mb-sm">
             <div class="col-sm-8 align-self-center">
 
-              <h1 class="display-2 text-white">...y recibí tu recompensa!</h1>
+              <h1 class="display-2 text-white wow slideInLeft animation-delay-0">...y recibí tu recompensa!</h1>
               <br>
-              <div class="coolborder p-sm">
+              <div class="coolborder p-sm wow fadeInUp animation-delay-1">
                 <p class="text-white" style="white-space: pre-line;">
-                  El perfil con mejor calificación es el ganador del sorteo!
+                  Los perfiles con mejor reputacion obtienen más beneficios!
                   </p>
               </div>
             </div>
             <div class="col-sm-4">
-                <img src="assets/img/donify/recompensa.svg" class="card-image img-fluid" />
+                <img src="assets/img/donify/recompensa.svg" class="card-image  wow fadeInRight animation-delay-1 shadowed" />
               </div>
 
           </div>
@@ -282,8 +293,9 @@
   <!-- Argon JS -->
   <script src="./assets/js/argon.js?v=1.1.0"></script>
 
-  <script type="text/javascript">
-
+  <script src="./bower_components/wow/dist/wow.min.js"></script>
+  <script>
+  new WOW().init();
   </script>
 </body>
 

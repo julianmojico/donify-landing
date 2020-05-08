@@ -1,3 +1,20 @@
+:root {
+    --animate-duration: 1.3s;
+    --animation-delay: 0.9s;
+  }
+
+  .h-75vh
+  {
+      height: 75vh !important;
+  } 
+
+  .shadowed {
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
 .parallax {
     /* 6D07E6  */
     background-image: linear-gradient(120deg, rgba(80, 0, 209, 0.8) 30%, rgba(80, 0, 209, 0.4)  50%) !important;
@@ -12,9 +29,32 @@
 .card-image {
     max-width: 300px;
     min-width: 200px;
-    margin-left: 30px;
     margin-top: 50px;
     margin-bottom: 10px;
+}
+
+.animation-duration-3 {
+    animation-duration: 3s;
+}
+.animation-duration-2 {
+    animation-duration: 2s;
+}
+.animation-duration-1 {
+    animation-duration: 1s;
+}
+
+.animation-delay-0 {
+    animation-delay: 0s;
+}
+.animation-delay-1 {
+    animation-delay: 1s;
+}
+.animation-delay-2 {
+    animation-delay: 2s;
+}
+
+.animation-delay-3 {
+    animation-delay: 3s;
 }
 
 @keyframes stretch {
