@@ -17,7 +17,7 @@
 
 .parallax {
     /* 6D07E6  */
-    background-image: linear-gradient(120deg, rgba(80, 0, 209, 0.8) 30%, rgba(80, 0, 209, 0.4)  50%) !important;
+    /* background-image: linear-gradient(120deg, rgba(80, 0, 209, 0.8) 30%, rgba(80, 0, 209, 0.4)  50%) !important; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
